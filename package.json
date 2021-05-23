@@ -1,5 +1,6 @@
 {
   "name": "psconstructs",
+  "description": "test cnxc constructs for cdk",
   "repository": {
     "type": "git",
     "url": "https://github.com/cnxc-labs/psconstructs.git"
@@ -20,8 +21,8 @@
     "watch": "npx projen watch",
     "package": "npx projen package",
     "eslint": "npx projen eslint",
-    "compat": "npx projen compat",
     "docgen": "npx projen docgen",
+    "compat": "npx projen compat",
     "projen": "npx projen",
     "start": "npx projen start"
   },
@@ -31,7 +32,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.103.0",
+    "@aws-cdk/assert": "^1.105.0",
     "@types/jest": "^26.0.23",
     "@types/lodash": "^4.14.170",
     "@types/node": "^10.17.0",
@@ -52,35 +53,39 @@
     "projen": "^0.18.5",
     "standard-version": "^9",
     "ts-jest": "^26.5.6",
+    "typedoc": "^0.20.35",
     "typescript": "^4.2.4"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "^1.103.0",
-    "@aws-cdk/aws-iam": "^1.103.0",
-    "@aws-cdk/aws-lambda": "^1.103.0",
-    "@aws-cdk/aws-logs": "^1.103.0",
-    "@aws-cdk/aws-s3": "^1.103.0",
-    "@aws-cdk/core": "^1.103.0",
+    "@aws-cdk/aws-apigateway": "^1.105.0",
+    "@aws-cdk/aws-iam": "^1.105.0",
+    "@aws-cdk/aws-kms": "^1.105.0",
+    "@aws-cdk/aws-lambda": "^1.105.0",
+    "@aws-cdk/aws-logs": "^1.105.0",
+    "@aws-cdk/aws-s3": "^1.105.0",
+    "@aws-cdk/core": "^1.105.0",
     "constructs": "^3.2.27"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.103.0",
-    "@aws-cdk/aws-iam": "^1.103.0",
-    "@aws-cdk/aws-lambda": "^1.103.0",
-    "@aws-cdk/aws-logs": "^1.103.0",
-    "@aws-cdk/aws-s3": "^1.103.0",
-    "@aws-cdk/core": "^1.103.0",
+    "@aws-cdk/aws-apigateway": "^1.105.0",
+    "@aws-cdk/aws-iam": "^1.105.0",
+    "@aws-cdk/aws-kms": "^1.105.0",
+    "@aws-cdk/aws-lambda": "^1.105.0",
+    "@aws-cdk/aws-logs": "^1.105.0",
+    "@aws-cdk/aws-s3": "^1.105.0",
+    "@aws-cdk/core": "^1.105.0",
     "lodash": "^4.17.21"
   },
   "bundledDependencies": [
     "lodash"
   ],
   "keywords": [
-    "cdk"
+    "cdk",
+    "cnxc"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
-  "version": "0.1.8",
+  "version": "0.0.0",
   "jest": {
     "testMatch": [
       "**/__tests__/**/*.ts?(x)",
