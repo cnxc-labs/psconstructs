@@ -29,7 +29,7 @@ export class SecureBucket extends cdk.Construct {
   constructor (scope: cdk.Construct, id:string, attrs: s3.BucketProps) {
     super(scope, id);
 
-    // bump
+    // bump1
 
     attrs = _.defaults({}, attrs, {
       encryption: s3.BucketEncryption.KMS,
