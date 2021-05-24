@@ -64,6 +64,10 @@ const project = new AwsCdkConstructLibrary({
   //   'aws-sdk': Semver.caret('2.708.0'),
   // },
 
+  scripts: {
+    release: 'standard-version',
+  },
+
   cdkAssert: true,
 
   docgen: true,

@@ -33,6 +33,14 @@
       ],
       "condition": "git diff --exit-code > /dev/null"
     },
+    "release": {
+      "name": "release",
+      "steps": [
+        {
+          "exec": "standard-version"
+        }
+      ]
+    },
     "bump": {
       "name": "bump",
       "category": "20.release",

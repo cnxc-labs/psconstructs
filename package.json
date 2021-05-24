@@ -7,6 +7,7 @@
   },
   "scripts": {
     "clobber": "npx projen clobber",
+    "release": "npx projen release",
     "bump": "npx projen bump",
     "unbump": "npx projen unbump",
     "compile": "npx projen compile",
@@ -85,7 +86,7 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "jest": {
     "testMatch": [
       "**/__tests__/**/*.ts?(x)",
